@@ -1,0 +1,121 @@
+/* ---------------------------
+            Core Style  
+------------------------------*/
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.orange-color{
+    color: #E76F51;
+}
+
+/*----------------------------------------
+         header banner & text area  
+-----------------------------------------*/
+
+.header-banner{
+    background-color: #264653;
+    
+}
+
+.headline-font{
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.purchase-btn{
+    background-color: #E76F51;
+    width: 168px;
+height: 44px;
+}
+
+
+
+/*---------------------------------- 
+         Animation  
+----------------------------------- */
+
+
+.animation-main-bg{
+    display: block;
+    padding-top: 35px;
+    padding-right: 0px;
+    padding-bottom: 200px;
+    padding-left: 0px;
+    position: relative;
+    /* margin-bottom: 10px; */
+    width: 100%;
+    height: 520px;
+    margin-top: 2rem;
+    
+}
+   
+
+.animation-bg{
+    position: absolute;
+    bottom: 0;
+    background-image: url(/images/ani-bg/ani-bg.png) ;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    
+}
+
+.bike-one{
+    background-image: url(/images/ani-bg/stunt-bike.gif);
+ background-repeat: no-repeat;
+ width: 100px;
+ height: 125px;
+ background-size:100%;
+ bottom: 0;
+ left:33%;
+ position: absolute;
+ 
+ animation-name: ani-move;
+ animation-duration: 10s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+}
+
+
+@keyframes ani-move {
+    0%{
+        left: 0
+    }
+
+    100%{
+        left: 100%;
+    }
+
+}
+
+.bike-two{
+background-image: url(/images/ani-bg/speed-bike.gif);
+background-repeat: no-repeat;
+background-size: 100%;
+width: 105px;
+height: 125px;
+bottom: 0;
+left: 33%;
+position: absolute;
+padding-bottom: 40px;
+
+animation-name: ani-move-two;
+animation-duration: 4s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+@keyframes ani-move-two {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
